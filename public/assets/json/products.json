@@ -1,0 +1,44 @@
+{
+  "data": [
+        {
+            "id": "01",
+            "name": "Philips LED peer E27 60W 2 stuks mat niet dimbaar",
+            "description": "Vervang uw oude lamp met een nieuwe energiezuinige Philips LED-lamp, met warmwit licht. Deze standaardlampen verbruiken circa 80% minder energie dan traditionele lampen dankzij de nieuwste energiezuinige LED-technologie en ze gaan tien keer langer mee.",
+            "image": "./assets/images/products/01.jpg",
+            "category": "lights",
+            "price": "15,00"
+        },
+        {
+            "id": "02",
+            "name": "Handson LED 4W E14  400LM 2000K",
+            "description": "De HANDSON LED 4W E14 400LM 2000K is een energiezuinig alternatief voor de gloeilamp en de spaarlamp. Deze staaflamp heeft een E14 fitting, ook wel 'kleine' draaifitting genoemd.",
+            "image": "./assets/images/products/02.jpg",
+            "category": "lights",
+            "price": "19,00"
+        },
+        {
+            "id": "03",
+            "name": "Philips LED peer E27 100W 6 stuks mat niet dimbaar",
+            "description": "Bekijk hier het volledige assortiment LED-lampen.",
+            "image": "./assets/images/products/03.jpg",
+            "category": "lights",
+            "price": "27,00"
+        },
+        {
+            "id": "04",
+            "name": "Philips LED peer E27 60W 2 stuks filament helder niet dimbaar",
+            "description": "Vervang uw oude lamp met een nieuwe energiezuinige Philips LED-lamp, met warmwit licht. Deze standaardlampen verbruiken circa 80% minder energie dan traditionele lampen dankzij de nieuwste energiezuinige LED-technologie en ze gaan tien keer langer mee.",
+            "image": "./assets/images/products/04.jpg",
+            "category": "lights",
+            "price": "15,00"
+        },
+        {
+            "id": "05",
+            "name": "Philips smart LED spot GU10 50 watt dimbaar",
+            "description": "Maak de standaard inbouwlampen en spotjes in je huis slim met de warme gloed van deze twee gekleurde Philips Smart LED GU10-spots. De lampen zijn eenvoudig te bedienen via de WiZ app. Zo kun je de spots gemakkelijk dimmen, feller zetten of één van de voorgeprogrammeerde lichtscènes kiezen.",
+            "image": "./assets/images/products/05.jpg",
+            "category": "lights",
+            "price": "29,00"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+.panel {
+  position: absolute;
+  padding: 0 1.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: white;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+}
+  
+.active {
+  transform: translateX(0%);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+  padding: 2rem;
+}

@@ -1,0 +1,14 @@
+.price {
+  color: #ff7300;
+  font-weight: bold;
+}
+
+.leading {
+  font-size: 2rem;
+}
+
+.trailing {
+  position: relative;
+  font-size: 1.2rem;
+  top: -0.55rem;
+}
