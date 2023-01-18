@@ -4,9 +4,15 @@ import { ProductItem } from '../common.types';
 import { Header } from './organisms/header/Header';
 import { WishListPanel } from './organisms/wishlist-panel/WishlistPanel';
 
+const getInitialWishList = () => {
+  const localStorage = window.localStorage.getItem('product-listing');
+
+  return localStorage ? localStorage.split(',') : [];
+}
+
 const App = () => {
   const [products, setProducts] = useState<ProductItem[]>([]); // Wanted to move all products and wishlist related state to context, to access the data directly, but no time anymore :/
-  const [productWishlist, setProductWishlist] = useState<string[]>([]);
+  const [productWishlist, setProductWishlist] = useState<string[]>(getInitialWishList());
   const [wishlistPanelActive, setWishlistPanelActive] = useState(false);
   
   const loadProducts = async () => {
@@ -21,7 +27,6 @@ const App = () => {
   const updateWishlist = useCallback((id: string) => {
     if (productWishlist.includes(id)) {
       setProductWishlist([...productWishlist.filter(item => item !== id)]);
-
     } else {
       setProductWishlist([...productWishlist, id]);
     }
@@ -34,6 +39,10 @@ const App = () => {
   const closeWishlist = useCallback(() => {
     setWishlistPanelActive(false);
   }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('product-listing', productWishlist.toString());
+  }, [productWishlist]);
 
   useEffect(() => {
     loadProducts();
